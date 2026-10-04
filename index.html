@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Score Evaluator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Crimson+Pro:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="page-header">
+        <h1>Score Evaluator</h1>
+        <p>Step forward, and let your results be judged.</p>
+      </header>
+
+      <main class="chamber">
+        <!-- ================= TRIAL ================= -->
+        <section class="card trial-card">
+          <h2>The Trial</h2>
+          <p class="intro">
+            Click below to begin. You will be asked for your name and your score, then asked to
+            confirm before judgment is passed.
+          </p>
+          <button id="beginBtn" class="btn primary">Begin Evaluation</button>
+        </section>
+
+        <!-- ================= VERDICT ================= -->
+        <section class="card verdict-card" id="verdictCard" hidden>
+          <h2>The Verdict</h2>
+          <div id="verdictBody" class="verdict-body"></div>
+          <button id="againBtn" class="btn secondary" hidden>Evaluate Again</button>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
